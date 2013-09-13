@@ -100,3 +100,8 @@ snippet pdb Set debug trace
 	import pdb; pdb.set_trace()
 snippet skip Skip test
 	from nose.plugins.skip import SkipTest; raise SkipTest
+snippet stt Set scoped debug trace
+	from misweb.avocacommon import scoped_trace; scoped_trace.trace()
+snippet sta Scoped trace activation decorator
+	from misweb.avocacommon import scoped_trace
+	@scoped_trace.active
