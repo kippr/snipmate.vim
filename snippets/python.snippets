@@ -97,7 +97,7 @@ snippet kp qq: quick question for someone
 snippet kp slime: test slime that should be resolved pre-commit
 	# kp: slime: ${1}
 snippet pdb Set debug trace
-	import pdb; pdb.set_trace()
+	import ipdb; ipdb.set_trace()
 snippet skip Skip test
 	from nose.plugins.skip import SkipTest; raise SkipTest
 snippet stt Set scoped debug trace
@@ -105,3 +105,10 @@ snippet stt Set scoped debug trace
 snippet sta Scoped trace activation decorator
 	from misweb.avocacommon import scoped_trace
 	@scoped_trace.active
+snippet unit Unittest case import
+	from unittest import TestCase as UnitTestCase
+snippet fixtest Django Fixture Integration testcase import
+	from django_nose import FastFixtureTestCase as FixtureTestCase
+snippet main __main__ name check
+	if __name__ == "__main__":
+	    ${1}
