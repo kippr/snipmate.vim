@@ -26,3 +26,7 @@ snippet case
 		${2:pattern})
 			${3};;
 	esac
+
+snippet strict
+	set -euo pipefail
+	IFS=$'\n\t'
